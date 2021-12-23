@@ -17,4 +17,4 @@
 .prettierignore
 
 # my notes
-.txt
+*.txt
