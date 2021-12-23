@@ -1,0 +1,18 @@
+body {
+  background-color: blueviolet;
+  height: 100vh;
+}
+
+.container {
+  width: 950px;
+  height: 500px;
+  background-color: white;
+  margin: auto;
+  position: relative;
+  top: 200px;
+  border-radius: 30px;
+}
+
+.pattern-pic {
+  width: 100%;
+}
