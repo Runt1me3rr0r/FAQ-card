@@ -4,45 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
-
     <title>Frontend Mentor | FAQ Accordion Card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="import" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .attribution a {
+      color: hsl(238, 29%, 16%);
+    }
+  </style>
   <body>
-    <div class="container">
-      <div class="demo-container">
-        <img class="pattern-pic" src="images/bg-pattern-desktop.svg" alt="" />
+    <section class="card-box">
+      <img
+        src="images/illustration-box-desktop.svg"
+        alt="cube"
+        class="floatCube"
+      />
+      <div class="cardImg">
         <img
-          class="woman-pic"
           src="images/illustration-woman-online-desktop.svg"
-          alt=""
+          alt="desktop-view"
         />
       </div>
-    </div>
-
-    <!-- <div class="attribution">
+      <div class="cardText">
+        <h1>FAQ</h1>
+        <div class="accordionContainer">
+          <div class="accordion-item">
+            <h2>
+              <button class="btn-accordionQ">
+                How many team members can I invite?
+              </button>
+            </h2>
+            <div class="accordion-hide">
+              <div class="accordion-content">
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2>
+              <button class="btn-accordionQ open">
+                What is the maximum file upload size?
+              </button>
+            </h2>
+            <div class="accordion-hide">
+              <div class="accordion-content">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2>
+              <button class="btn-accordionQ">
+                How do I reset my password?
+              </button>
+            </h2>
+            <div class="accordion-hide">
+              <div class="accordion-content">
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2>
+              <button class="btn-accordionQ">
+                Can I cancel my subscription?
+              </button>
+            </h2>
+            <div class="accordion-hide">
+              <div class="accordion-content">
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2>
+              <button class="btn-accordionQ">
+                Do you provide additional support?
+              </button>
+            </h2>
+            <div class="accordion-hide">
+              <div class="accordion-content">
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+      >. Coded by <a href="#">Mikee</a>.
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
