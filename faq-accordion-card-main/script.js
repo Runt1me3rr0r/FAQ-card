@@ -31,6 +31,5 @@ btnAccordionTag.forEach((el) => {
     }
 
     el.classList.toggle("open");
-    // toggleCollapseTag.classList.toggle("open");
   });
 });
