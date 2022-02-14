@@ -87,7 +87,7 @@ h3 {
   border: none;
   background: transparent;
   margin-bottom: 1rem;
-  padding: 0;
+  padding: 0.2rem;
   font-size: 1rem;
   font-family: "Kumbh Sans", sans-serif;
 }
@@ -101,18 +101,47 @@ h3 {
   display: block;
   width: 0.625rem;
   height: 1rem;
+  border: none;
   background-image: url("images/icon-arrow-down.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
+.btn-accordionQ.open::after {
+  transform: rotate(180deg);
+}
+
+.btn-accordionQ:focus,
+.btn-accordionQ:focus-visible {
+  border: none;
+  outline: 1px dashed rgba(0, 0, 0, 0.25);
+}
+
 .accordion-content {
   font-size: 0.75rem;
   line-height: 1.4rem;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
+.accordion-toggle {
+  transform: height 0.3s ease;
+}
+
+.accordion-toggle.collapse {
+  display: none;
+}
+
+.accordion-toggle.collapsing {
+  height: 0;
+  overflow: hidden;
+}
+
+.accordion-toggle.open {
+  display: block;
+}
+
+/* Desktop responsive */
 /* 900 / 16 = 56.25em */
 @media (min-width: 56.25em) {
   body {
@@ -132,7 +161,7 @@ h3 {
     display: block;
     position: absolute;
     top: 50%;
-    transform: translateX(-48%) translateY(-20%);
+    transform: translateX(-50%) translateY(-50%);
     z-index: 1;
   }
 
